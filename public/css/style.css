@@ -1,0 +1,44 @@
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #989898;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.0625em;
+    text-align: center;
+    height: 70px;
+    align-content: center;
+}
+
+.top-nav-bar .logo {
+    width: 208px;
+    height: auto;
+}
+
+a.active {
+    color: #D79928 !important;
+}
+
+.top-nav-bar {
+    min-height: 60px;
+}
+
+nav#top-nav-bar {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    font-weight: 700;
+}
+
+nav#top-nav-bar a {
+    color: black;
+
+}
