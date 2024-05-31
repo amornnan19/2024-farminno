@@ -173,7 +173,7 @@
             if (checkbox1.checked && checkbox2.checked) {
                 nextButton.classList.remove('disabled');
                 nextButton.setAttribute('href',
-                    '/customer-registration'); // Replace 'your_target_page.html' with your actual target URL
+                    '/customer-registration');
             } else {
                 nextButton.classList.add('disabled');
                 nextButton.removeAttribute('href');

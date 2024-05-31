@@ -48,7 +48,7 @@
 
 
     @if (request()->path() != 'login' && request()->path() != 'register' && request()->path() != 'confirm-repair-work')
-        <footer class="footer d-block d-sm-none">
+        <footer id="footer" class="footer d-block d-sm-none">
             <div class="container">
                 <div class="row">
                     <div class="col-3">

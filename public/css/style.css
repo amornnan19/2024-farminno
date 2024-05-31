@@ -27,7 +27,7 @@ input[type=checkbox] {
 .form-control {
     font-size: 16px;
     font-weight: 500;
-    line-height: 24.18px;
+    line-height: 25px;
 }
 
 .form-title {
@@ -36,7 +36,28 @@ input[type=checkbox] {
     line-height: 36.26px;
 }
 
-hr {
+.form-text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #363636;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+
+}
+
+.form-value {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+
+}
+
+.yellow-line {
     height: 4px;
     color: #E7A51B;
     background-color: #E7A51B;
