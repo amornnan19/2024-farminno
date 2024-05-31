@@ -6,15 +6,39 @@ body {
 
 label {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 24.18px;
-    text-align: left;
-
 }
 
 input {
     border: 1px solid #707070 !important;
     margin: 10px 0px;
+}
+
+input:read-only {
+    background: #EBEBEB;
+    color: #7A7A7A;
+}
+
+.form-control {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24.18px;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36.26px;
+}
+
+hr {
+    height: 4px;
+    color: #E7A51B;
+    background-color: #E7A51B;
+    opacity: 1;
+    border: none;
+    margin: 6px 0px 14px 0px;
 }
 
 .primary-btn {
