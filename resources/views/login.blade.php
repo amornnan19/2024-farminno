@@ -27,6 +27,8 @@
         .login-form button {
             border-radius: 29px;
             height: 50px;
+            width: 100%;
+            max-width: 600px;
             font-size: 20px;
             font-weight: 700;
             line-height: 27px;
@@ -58,6 +60,7 @@
             .login-form p {
                 font-size: 16px;
             }
+
             .login-form button {
                 font-size: 16px;
             }
@@ -78,7 +81,7 @@
                             <img class="logo d-block mx-auto mt-5" src="{{ asset('img/main-logo-white.png') }}" alt="Logo">
 
                             <div class="text-center mt-5">
-                                <button type="button" class="btn btn-light w-100 mt-5">ดำเนินการต่อด้วยหมายเลขโทรศัพท์
+                                <button type="button" class="btn btn-light mt-5">ดำเนินการต่อด้วยหมายเลขโทรศัพท์
                                     <svg class="ms-3" width="19" height="37" viewBox="0 0 19 37" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -110,7 +113,7 @@
                     <div class="card mt-5">
                         <div class="card-body">
                             <div class="text-center">
-                                <button type="button" class="btn btn-dark w-100">ตัวแทนจำหน่าย</button>
+                                <button type="button" class="btn btn-dark">ตัวแทนจำหน่าย</button>
                             </div>
                         </div>
                     </div>
