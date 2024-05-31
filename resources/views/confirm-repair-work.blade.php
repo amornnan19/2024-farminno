@@ -66,7 +66,7 @@
                     <div class="form-group">
                         <label for="phone_number">กรุณากรอกหมายเลขโทรศัพท์</label>
                         <input type="text" class="form-control" id="phone_number" aria-describedby="" placeholder=""
-                            value="sss" readonly>
+                            value="sss" disabled>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
