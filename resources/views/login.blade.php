@@ -73,7 +73,7 @@
         <div class="login-form">
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <div class="card mt-5">
+                    <div class="card">
                         <div class="card-body mt-5">
                             <div>
                                 <p>เข้าสู่ระบบกับ</p>

@@ -13,7 +13,7 @@
 
 <body>
 
-    @if (request()->path() != 'login')
+    @if (request()->path() != 'login' && request()->path() != 'register')
         <nav id="top-nav-bar" class="navbar navbar-expand-sm bg-body-tertiary fixed-top top-nav-bar">
             <div class="container-fluid">
                 @if (request()->path() != '/' && request()->path() != 'home')
@@ -44,7 +44,7 @@
     @yield('content')
 
 
-    @if (request()->path() != 'login')
+    @if (request()->path() != 'login' && request()->path() != 'register')
         <footer class="footer d-block d-sm-none">
             <div class="container">
                 <div class="row">
