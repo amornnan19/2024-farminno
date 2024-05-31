@@ -6,7 +6,7 @@
             background-color: #0F1922;
         }
 
-        .login-form{
+        .login-form {
             min-height: 550px
         }
 
@@ -28,7 +28,7 @@
             color: white;
         }
 
-        .login-form button {
+        .login-form a {
             border-radius: 29px;
             height: 50px;
             width: 100%;
@@ -38,7 +38,7 @@
             line-height: 27px;
         }
 
-        .login-form button.btn.btn-dark {
+        .login-form a.btn.btn-dark {
             background: #151515;
             color: #363636;
         }
@@ -65,7 +65,7 @@
                 font-size: 16px;
             }
 
-            .login-form button {
+            .login-form a {
                 font-size: 16px;
             }
         }
@@ -85,7 +85,7 @@
                         <img class="logo d-block mx-auto mt-5" src="{{ asset('img/main-logo-white.png') }}" alt="Logo">
 
                         <div class="text-center mt-5">
-                            <button type="button" class="btn btn-light mt-5">ดำเนินการต่อด้วยหมายเลขโทรศัพท์
+                            <a href="/register" class="btn btn-light mt-5">ดำเนินการต่อด้วยหมายเลขโทรศัพท์
                                 <svg class="ms-3" width="19" height="37" viewBox="0 0 19 37" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -109,7 +109,7 @@
                                         </linearGradient>
                                     </defs>
                                 </svg>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                 <div class="card d-flex justify-content-center">
                     <div class="card-body">
                         <div class="text-center">
-                            <button type="button" class="btn btn-dark">ตัวแทนจำหน่าย</button>
+                            <a href="/register" class="btn btn-dark">ตัวแทนจำหน่าย</a>
                         </div>
                     </div>
                 </div>

@@ -59,6 +59,23 @@ hr {
     background-color: #FFE1AC;
     color: #FFFFFF;
     cursor: not-allowed;
+    pointer-events: none;
+}
+
+.primary-btn.btn:hover {
+    color: #FFFFFF;
+    background-color: #D79928;
+    border-color: #D79928;
+}
+
+.primary-btn.btn-check:checked+.btn,
+.primary-btn.btn.active,
+.primary-btn.btn.show,
+.primary-btn.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: #FFFFFF;
+    background-color: #D79928;
+    border-color: #D79928;
 }
 
 .title {

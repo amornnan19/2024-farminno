@@ -116,7 +116,7 @@
                     <div class="row">
                         <div class="col-2">
                             <div class="round">
-                                <input type="checkbox" id="checkbox1" />
+                                <input type="checkbox" id="checkbox1" onclick="checkCheckboxes()" />
                                 <label for="checkbox1"></label>
                             </div>
                         </div>
@@ -129,7 +129,7 @@
                     <div class="row mt-3">
                         <div class="col-2">
                             <div class="round">
-                                <input type="checkbox" id="checkbox2" />
+                                <input type="checkbox" id="checkbox2" onclick="checkCheckboxes()" />
                                 <label for="checkbox2"></label>
                             </div>
                         </div>
@@ -142,14 +142,10 @@
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <p class="btn primary-btn disabled">ถัดไป</p>
+                    <a id="nextButton" class="btn primary-btn disabled">ถัดไป</a>
                 </div>
             </form>
         </div>
-
-
-
-
     </div>
 @endsection
 
@@ -167,6 +163,21 @@
                 $("#opt_form").removeClass("d-block").addClass("d-none");
                 $("#consent_form").removeClass("d-none").addClass("d-block");
             });
+        }
+
+        function checkCheckboxes() {
+            const checkbox1 = document.getElementById('checkbox1');
+            const checkbox2 = document.getElementById('checkbox2');
+            const nextButton = document.getElementById('nextButton');
+
+            if (checkbox1.checked && checkbox2.checked) {
+                nextButton.classList.remove('disabled');
+                nextButton.setAttribute('href',
+                    '/customer-registration'); // Replace 'your_target_page.html' with your actual target URL
+            } else {
+                nextButton.classList.add('disabled');
+                nextButton.removeAttribute('href');
+            }
         }
     </script>
 @endpush
