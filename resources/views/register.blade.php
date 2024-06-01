@@ -2,6 +2,14 @@
 
 @push('custom-css')
     <style>
+        footer#footer {
+            display: none !important;
+        }
+
+        nav#top-nav-bar {
+            display: none !important;
+        }
+
         .register-content .logo {
             width: 100%;
             max-width: 208px;

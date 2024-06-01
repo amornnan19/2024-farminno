@@ -6,6 +6,14 @@
             background-color: #0F1922;
         }
 
+        footer#footer {
+            display: none !important;
+        }
+
+        nav#top-nav-bar {
+            display: none !important;
+        }
+
         .login-form {
             min-height: 550px
         }

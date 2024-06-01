@@ -11,6 +11,10 @@
             display: none !important;
         }
 
+        nav#top-nav-bar {
+            display: none !important;
+        }
+
         .round {
             margin-left: 0;
         }
@@ -45,10 +49,6 @@
 
         .customer-registration-content form {
             min-height: 350px
-        }
-
-        tr {
-            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
         }
     </style>
 @endpush
