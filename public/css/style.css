@@ -141,6 +141,10 @@ a.active {
     color: #D79928 !important;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .top-nav-bar {
     min-height: 60px;
 }

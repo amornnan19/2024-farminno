@@ -16,3 +16,5 @@ Route::get('/customer-registration', function () {return view('customer-registra
 
 Route::get('/service-status', function () {return view('service-status');})->name('service-status');
 Route::get('/service-status-detail', function () {return view('service-status-detail');})->name('service-status-detail');
+
+Route::get('/product', function () {return view('product');})->name('product');
