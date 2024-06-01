@@ -49,6 +49,8 @@
         .login-form a.btn.btn-dark {
             background: #151515;
             color: #363636;
+            border: none;
+            align-content: center;
         }
 
         .loginfooter {

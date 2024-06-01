@@ -1,3 +1,7 @@
+:root {
+    --main-color: #D79928;
+}
+
 body {
     font-family: 'Noto Sans Thai', sans-serif;
     padding-top: 60px;
@@ -61,6 +65,10 @@ tr {
 
 }
 
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem rgba(215, 153, 40, .25);
+}
+
 .yellow-line {
     height: 4px;
     color: #E7A51B;
@@ -109,22 +117,6 @@ tr {
     line-height: 27px;
     text-align: center;
 
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #FFFFFF;
-    color: #989898;
-    padding: 10px 0;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.0625em;
-    text-align: center;
-    height: 70px;
-    align-content: center;
 }
 
 .top-nav-bar .logo {
@@ -201,4 +193,55 @@ nav#top-nav-bar a {
 
 .round input[type="checkbox"]:checked+label:after {
     opacity: 1;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #989898;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.0625em;
+    text-align: center;
+    height: 70px;
+    align-content: center;
+}
+
+footer#footer a {
+    color: #989898;
+    text-decoration: none;
+}
+
+footer#footer a.active {
+    color: #D79928 !important;
+}
+
+footer#footer .svg-box {
+    height: 40px;
+}
+
+.main-content-header {
+    background-color: #0F1922;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 30px
+}
+
+.main-content-header .title {
+    color: #D79928;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45.33px;
+}
+
+.main-content-header .sub-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
 }

@@ -19,28 +19,6 @@
             margin-left: 0;
         }
 
-        .main-content-header {
-            background-color: #0F1922;
-            padding-top: 20px;
-            padding-bottom: 10px;
-            border-radius: 0 0 30px 30px;
-            margin-bottom: 30px
-        }
-
-        .main-content-header .title {
-            color: #D79928;
-            font-size: 30px;
-            font-weight: 700;
-            line-height: 45.33px;
-        }
-
-        .main-content-header .sub-title {
-            color: white;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 27px;
-        }
-
         .customer-registration-content .logo-box {
             width: 160px;
             height: auto;
