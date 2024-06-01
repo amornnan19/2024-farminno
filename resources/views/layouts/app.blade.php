@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farminno</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
     @stack('custom-css')
+
 </head>
 
 <body>
@@ -52,7 +52,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-3 text-center">
-                    <a href="#" class="active">
+                    <a href="/" class="{{ request()->path() == 'home' ? 'active' : '' }}">
                         <div class="svg-box">
                             <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,7 @@
                     </a>
                 </div>
                 <div class="col-3 text-center">
-                    <a href="#">
+                    <a href="/service-status">
                         <div class="svg-box">
                             <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -110,6 +110,10 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
     <script>
         $(function() {
             console.log("ready!");

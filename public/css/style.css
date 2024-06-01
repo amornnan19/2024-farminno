@@ -245,3 +245,42 @@ footer#footer .svg-box {
     font-weight: 400;
     line-height: 27px;
 }
+
+.status-warning-badge {
+    border: none;
+    padding: 2px 15px;
+    border-radius: 6px;
+    background-color: #D79928;
+    color: white;
+}
+
+.status-error-badge {
+    border: none;
+    padding: 2px 15px;
+    border-radius: 6px;
+    background-color: #B2010C;
+    color: white;
+}
+
+.status-success-badge {
+    border: none;
+    padding: 2px 15px;
+    border-radius: 6px;
+    background-color: #009D65;
+    color: white;
+}
+
+.status-info-badge {
+    border: none;
+    padding: 2px 15px;
+    border-radius: 6px;
+    background-color: #091176;
+    color: white;
+}
+
+
+
+
+.drop-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

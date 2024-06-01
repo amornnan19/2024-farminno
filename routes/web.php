@@ -25,3 +25,7 @@ Route::get('/confirm-repair-work', function () {
 Route::get('/customer-registration', function () {
     return view('customer-registration');
 })->name('customer-registration');
+
+Route::get('/service-status', function () {
+    return view('service-status');
+})->name('service-status');
