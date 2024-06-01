@@ -4,7 +4,7 @@
     <style>
         body {
             /* background-image: url('{{ asset('img/home-bg.jpg') }}'); */
-            background: linear-gradient(0deg, rgba(15, 25, 34, 0.8) 20%, rgba(255, 255, 255, 0) 100%), url(http://127.0.0.1:8000/img/home-bg.jpg);
+            background: linear-gradient(0deg, rgba(15, 25, 34, 0.8) 20%, rgba(255, 255, 255, 0) 100%), url('{{ asset('/img/home-bg.jpg') }}');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: 45%;
@@ -40,6 +40,7 @@
             background: linear-gradient(0deg, rgba(40, 48, 48, 1) 0%, rgba(81, 87, 65, 1) 100%);
             background-size: contain;
             --bs-card-border-width: none;
+            border: 0;
         }
 
         .home-card p {

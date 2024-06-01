@@ -44,13 +44,14 @@
             font-size: 20px;
             font-weight: 700;
             line-height: 27px;
+            text-decoration: none;
         }
 
         .login-form a.btn.btn-dark {
             background: #151515;
             color: #363636;
             border: none;
-            align-content: center;
+            align-content: center; 
         }
 
         .loginfooter {

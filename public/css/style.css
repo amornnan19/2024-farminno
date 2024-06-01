@@ -36,6 +36,8 @@ tr {
     font-size: 16px;
     font-weight: 500;
     line-height: 25px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .form-title {
@@ -86,6 +88,7 @@ tr {
     line-height: 27.2px;
     width: 100%;
     max-width: 600px;
+    border-radius: 10px;
 }
 
 .primary-btn.disabled {
@@ -111,6 +114,11 @@ tr {
     border-color: #D79928;
 }
 
+.primary-btn.btn.focus,
+.primary-btn.btn:focus {
+    box-shadow: 0 0 0 .25rem rgba(215, 153, 40, .25);
+}
+
 .title {
     font-size: 20px;
     font-weight: 700;
@@ -126,7 +134,7 @@ tr {
 
 a {
     color: #2D3C8E;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a.active {
@@ -209,6 +217,7 @@ nav#top-nav-bar a {
     text-align: center;
     height: 70px;
     align-content: center;
+    z-index: 999;
 }
 
 footer#footer a {
@@ -278,9 +287,131 @@ footer#footer .svg-box {
     color: white;
 }
 
-
-
-
 .drop-shadow {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bell-box-content {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.bell-box-content img {
+    max-width: 40px;
+    margin-right: 10px
+}
+
+.tag-bell-box-content {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0px 10px;
+    border: 1px solid white;
+    border-radius: 30%;
+    font-size: 12px;
+}
+
+.main-content-sub-header .search-box {
+    margin: 0;
+    height: 40px;
+    align-content: center;
+    background-color: rgba(221, 221, 221, 1);
+    color: rgba(152, 152, 152, 1);
+    border: 1px solid rgba(112, 112, 112, 0.3);
+    border-radius: 10px;
+}
+
+.status-label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.15px;
+    color: #1A1A1A;
+}
+
+.status-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.15px;
+    color: #888888;
+}
+
+.carousel-image {
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: white;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    font-size: 24px;
+}
+
+.carousel-indicators {
+    bottom: 0;
+}
+
+.carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-indicators .active {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.modal-lg {
+    max-width: 100%;
+    margin: 0;
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+}
+
+.modal-content {
+    width: 100%;
+    height: auto;
+    max-height: 90%;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+.f16px {
+    font-size: 16px;
 }

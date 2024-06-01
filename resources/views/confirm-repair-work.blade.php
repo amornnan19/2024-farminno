@@ -3,7 +3,7 @@
 @push('custom-css')
     <style>
         body {
-            padding: 0;
+            padding-top: 0;
         }
 
         .confirm-repair-work-content .logo-box {

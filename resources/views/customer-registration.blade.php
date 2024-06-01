@@ -3,8 +3,7 @@
 @push('custom-css')
     <style>
         body {
-            padding: 0;
-            margin-bottom: 30px
+            padding-top: 0;
         }
 
         footer#footer {

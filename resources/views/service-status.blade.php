@@ -3,12 +3,7 @@
 @push('custom-css')
     <style>
         body {
-            padding: 0;
-            margin-bottom: 30px
-        }
-
-        footer#footer {
-            display: none !important;
+            padding-top: 0;
         }
 
         nav#top-nav-bar {
@@ -17,39 +12,6 @@
 
         .round {
             margin-left: 0;
-        }
-
-        .bell-box-content {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-
-        .bell-box-content img {
-            max-width: 40px;
-            margin-right: 10px
-        }
-
-        .tag-bell-box-content {
-            position: absolute;
-            top: 5px;
-            right: 0;
-            background-color: var(--main-color);
-            color: white;
-            padding: 0px 10px;
-            border: 1px solid white;
-            border-radius: 30%;
-            font-size: 12px;
-        }
-
-        .main-content-sub-header .search-box {
-            margin: 0;
-            height: 40px;
-            align-content: center;
-            background-color: rgba(221, 221, 221, 1);
-            color: rgba(152, 152, 152, 1);
-            border: 1px solid rgba(112, 112, 112, 0.3);
-            border-radius: 10px;
         }
 
         .service-status-content-container {
@@ -61,20 +23,6 @@
 
         .service-status-content-box {
             margin: 10px 0;
-        }
-
-        .service-status-content-box .status-label {
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 21.15px;
-            color: #1A1A1A;
-        }
-
-        .service-status-content-box .status-text {
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 21.15px;
-            color: #888888;
         }
 
         .service-status-content-container .top-left-label-error {
@@ -101,6 +49,10 @@
             font-size: 14px;
             font-weight: 700;
             line-height: 21.15px;
+        }
+
+        .service-status-content-container a {
+            text-decoration: none;
         }
     </style>
 @endpush
@@ -137,284 +89,292 @@
 
     <div class="container-fluid service-status-content-container">
         <div class="container">
-            <div class="service-status-content-box">
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        สถานะ
+            <a href="/service-status-detail">
+                <div class="service-status-content-box">
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            สถานะ
+                        </div>
+                        <div class="col-7 status-text ">
+                            <span class="status-warning-badge">อยู่ระหว่างดำเนินการ</span>
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        <span class="status-warning-badge">อยู่ระหว่างดำเนินการ</span>
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        หมายเลขงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            หมายเลขงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            2024030028-00121-5170
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        2024030028-00121-5170
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        ผู้เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            ผู้เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            alongkon fuguoka
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        alongkon fuguoka
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        เบอร์โทรผู้เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            เบอร์โทรผู้เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            0243567890
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        0243567890
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        วันที่เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            วันที่เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            11/03/2024
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        11/03/2024
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        วันที่ปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            วันที่ปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            18/03/2024
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        18/03/2024
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        สถานะการประกัน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            สถานะการประกัน
+                        </div>
+                        <div class="col-7 status-text ">
+                            <span class="status-warning-badge">อยู่ระหว่างตรวจสอบ</span>
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        <span class="status-warning-badge">อยู่ระหว่างตรวจสอบ</span>
-                    </div>
-                </div>
 
-            </div>
+                </div>
+            </a>
         </div>
     </div>
 
     <div class="container-fluid service-status-content-container">
         <div class="top-left-label-error">ประกันซ่อม</div>
         <div class="container">
-            <div class="service-status-content-box">
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        สถานะ
+            <a href="/service-status-detail">
+                <div class="service-status-content-box">
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            สถานะ
+                        </div>
+                        <div class="col-7 status-text ">
+                            <span class="status-error-badge">กรุณายืนยันการส่งมอบงาน</span>
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        <span class="status-error-badge">กรุณายืนยันการส่งมอบงาน</span>
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        หมายเลขงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            หมายเลขงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            2024030028-00121-5170
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        2024030028-00121-5170
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        ผู้เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            ผู้เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            alongkon fuguoka
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        alongkon fuguoka
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        เบอร์โทรผู้เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            เบอร์โทรผู้เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            0243567890
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        0243567890
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        วันที่เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            วันที่เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            11/03/2024
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        11/03/2024
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        วันที่ปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            วันที่ปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            18/03/2024
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        18/03/2024
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        สถานะการประกัน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            สถานะการประกัน
+                        </div>
+                        <div class="col-7 status-text ">
+                            <span class="status-info-badge">กรุงเทพประกันภัย</span>
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        <span class="status-info-badge">กรุงเทพประกันภัย</span>
-                    </div>
-                </div>
 
-            </div>
+                </div>
+            </a>
         </div>
     </div>
 
     <div class="container-fluid service-status-content-container">
         <div class="top-left-label-error">ประกันซ่อม</div>
         <div class="container">
-            <div class="service-status-content-box">
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        สถานะ
+            <a href="/service-status-detail">
+                <div class="service-status-content-box">
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            สถานะ
+                        </div>
+                        <div class="col-7 status-text ">
+                            <span class="status-success-badge">ปิดงาน</span>
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        <span class="status-success-badge">ปิดงาน</span>
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        หมายเลขงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            หมายเลขงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            2024030028-00121-5170
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        2024030028-00121-5170
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        ผู้เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            ผู้เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            alongkon fuguoka
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        alongkon fuguoka
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        เบอร์โทรผู้เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            เบอร์โทรผู้เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            0243567890
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        0243567890
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        วันที่เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            วันที่เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            11/03/2024
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        11/03/2024
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        วันที่ปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            วันที่ปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            18/03/2024
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        18/03/2024
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        สถานะการประกัน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            สถานะการประกัน
+                        </div>
+                        <div class="col-7 status-text ">
+                            <span class="status-success-badge">อยุ่ในประกัน</span>
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        <span class="status-success-badge">อยุ่ในประกัน</span>
-                    </div>
-                </div>
 
-            </div>
+                </div>
+            </a>
         </div>
     </div>
 
     <div class="container-fluid service-status-content-container">
         <div class="top-left-label-disabled">หมดประกัน</div>
         <div class="container">
-            <div class="service-status-content-box">
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        สถานะ
+            <a href="/service-status-detail">
+                <div class="service-status-content-box">
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            สถานะ
+                        </div>
+                        <div class="col-7 status-text ">
+                            <span class="status-success-badge">ปิดงาน</span>
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        <span class="status-success-badge">ปิดงาน</span>
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        หมายเลขงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            หมายเลขงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            2024030028-00121-5170
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        2024030028-00121-5170
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        ผู้เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            ผู้เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            alongkon fuguoka
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        alongkon fuguoka
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        เบอร์โทรผู้เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            เบอร์โทรผู้เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            0243567890
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        0243567890
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        วันที่เปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            วันที่เปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            11/03/2024
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        11/03/2024
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        วันที่ปิดงาน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            วันที่ปิดงาน
+                        </div>
+                        <div class="col-7 status-text ">
+                            18/03/2024
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        18/03/2024
-                    </div>
-                </div>
 
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 text-end status-label">
-                        สถานะการประกัน
+                    <div class="row mt-3 mb-3">
+                        <div class="col-5 text-end status-label">
+                            สถานะการประกัน
+                        </div>
+                        <div class="col-7 status-text ">
+                            <span class="status-error-badge">ไม่มีการประกัน</span>
+                        </div>
                     </div>
-                    <div class="col-8 status-text ">
-                        <span class="status-error-badge">ไม่มีการประกัน</span>
-                    </div>
-                </div>
 
-            </div>
+                </div>
+            </a>
         </div>
     </div>
 @endsection
