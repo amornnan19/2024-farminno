@@ -146,24 +146,6 @@
 
 @push('custom-script')
     <script>
-        function checkCheckboxes() {
-            const checkbox1 = document.getElementById('checkbox1');
-            const nextButton = document.getElementById('nextButton');
 
-            if (checkbox1.checked) {
-                nextButton.classList.remove('disabled');
-                nextButton.setAttribute('onclick', 'nextstepFunction()');
-            } else {
-                nextButton.classList.add('disabled');
-                nextButton.removeAttribute('onclick');
-            }
-        }
-
-        function nextstepFunction() {
-            $(function() {
-                $("#form_box").removeClass("d-block").addClass("d-none");
-                $("#form_login_box").removeClass("d-none").addClass("d-block");
-            });
-        }
     </script>
 @endpush

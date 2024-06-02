@@ -21,3 +21,5 @@ Route::get('/service-status-detail', function () {return view('service-status-de
 
 Route::get('/product', function () {return view('product');})->name('product');
 Route::get('/product-detail', function () {return view('product-detail');})->name('product-detail');
+
+Route::get('/drone-registration', function () {return view('drone-registration');})->name('drone-registration');
