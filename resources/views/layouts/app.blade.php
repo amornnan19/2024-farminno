@@ -46,11 +46,11 @@
                 $('#imageModal').modal('show');
             });
 
-            $('img').on('click', function() {
-                var src = $(this).attr('src');
-                $('#modalImage').attr('src', src);
-                $('#imageModal').modal('show');
-            });
+            // $('img').on('click', function() {
+            //     var src = $(this).attr('src');
+            //     $('#modalImage').attr('src', src);
+            //     $('#imageModal').modal('show');
+            // });
         });
     </script>
 
