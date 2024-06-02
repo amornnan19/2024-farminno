@@ -305,32 +305,11 @@
             <p id="sendbtncf" class="btn primary-btn f16px mt-5 d-none">ยืนยันการส่งมอบงานซ่อม</p>
         </div>
     </div>
-
-    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="" class="img-fluid w-100" id="modalImage" alt="Modal Image">
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
 
 @push('custom-script')
     <script>
         $(document).ready(function() {
-            $('.carousel-image').on('click', function() {
-                var src = $(this).attr('src');
-                $('#modalImage').attr('src', src);
-                $('#imageModal').modal('show');
-            });
 
             $('#sendbtn').on('click', function() {
                 $("#sendbtn").addClass("d-none");

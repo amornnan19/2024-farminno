@@ -30,6 +30,7 @@
 
     @include('include.footer')
 
+    @include('include.modal')
 
     {{-- <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
@@ -39,7 +40,17 @@
 
     <script>
         $(function() {
-            console.log("ready!");
+            $('.carousel-image').on('click', function() {
+                var src = $(this).attr('src');
+                $('#modalImage').attr('src', src);
+                $('#imageModal').modal('show');
+            });
+
+            $('img').on('click', function() {
+                var src = $(this).attr('src');
+                $('#modalImage').attr('src', src);
+                $('#imageModal').modal('show');
+            });
         });
     </script>
 
