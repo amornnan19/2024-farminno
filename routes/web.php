@@ -25,3 +25,29 @@ Route::get('/product-detail', function () {return view('product-detail');})->nam
 Route::get('/drone-registration', function () {return view('drone-registration');})->name('drone-registration');
 
 Route::get('/my-account', function () {return view('my-account');})->name('my-account');
+
+Route::get('/dealer-registration', function () {return view('dealer-registration');})->name('dealer-registration');
+
+Route::get('/dealer-home', function () {return view('dealer-home');})->name('dealer-home');
+
+Route::get('/dealer-product-detail', function () {return view('dealer-product-detail');})->name('dealer-product-detail');
+
+Route::get('/dealer-service-status-detail', function () {return view('dealer-service-status-detail');})->name('dealer-service-status-detail');
+
+Route::get('/dealer-report-repair', function () {return view('dealer-report-repair');})->name('dealer-report-repair');
+
+Route::get('/dealer-flight-logs', function () {return view('dealer-flight-logs');})->name('dealer-flight-logs');
+
+Route::get('/dealer-service-status', function () {return view('dealer-service-status');})->name('dealer-service-status');
+
+Route::get('/dealer-service-product-detail', function () {return view('dealer-service-product-detail');})->name('dealer-service-product-detail');
+
+Route::get('/notification', function () {return view('notification');})->name('notification');
+
+Route::get('/notification-detail', function () {return view('notification-detail');})->name('notification-detail');
+
+Route::get('/dealer-my-account', function () {return view('dealer-my-account');})->name('dealer-my-account');
+
+Route::get('/pdpa', function () {return view('pdpa');})->name('pdpa');
+
+

@@ -40,7 +40,7 @@
             </div>
 
             <div>
-                <p class="form-title">ข้อมูลผู้ครอบครอง (Customer)</p>
+                <p class="form-title">ข้อมูลผู้ตัวแทนจำหน่าย</p>
             </div>
 
             <hr class="yellow-line">
@@ -48,9 +48,9 @@
             <div id="my_account_form_box">
                 <form id="my_account_form" class="d-flex flex-column justify-content-between">
                     <div class="form-group">
-                        <label for="">คำนำหน้า (Name Title)*</label>
+                        <label for="">ชื่อตัวแทนจำหน่าย (Dealer Title)*</label>
                         <input type="text" class="form-control" id="" aria-describedby="" placeholder=""
-                            value="นาย" disabled>
+                            value="สไนเปอร์การบิน" disabled>
                     </div>
                     <div class="form-group">
                         <label for="">ชื่อ (First Name)*</label>

@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@php
+    $role = 'dealer';
+@endphp
 @push('custom-css')
     <style>
         body {
@@ -298,24 +300,10 @@
         </div>
 
         <div class="d-flex justify-content-center">
-            <p id="sendbtn" class="btn primary-btn f16px mt-5">แจ้งพบปัญหาการซ่อม</p>
-            <p id="sendbtncf" class="btn primary-btn f16px mt-5 d-none">ยืนยันการส่งมอบงานซ่อม</p>
+            <a href="/dealer-report-repair" class="btn primary-btn f16px mt-5">แจ้งซ่อม</a>
         </div>
     </div>
 @endsection
 
 @push('custom-script')
-    <script>
-        $(document).ready(function() {
-
-            $('#sendbtn').on('click', function() {
-                $("#sendbtn").addClass("d-none");
-                $("#sendbtncf").removeClass("d-none").addClass("d-block");
-            });
-
-            $("#sendbtncf").on("click", function() {
-                window.location.replace("/product");
-            });
-        });
-    </script>
 @endpush

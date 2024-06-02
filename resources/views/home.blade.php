@@ -105,10 +105,7 @@
                 <img src="{{ asset('img/main-logo-white.png') }}" class="home-content-logo mt-3" alt="">
             </div>
             <div class="col" style="text-align: right;">
-                <div class="bell-box">
-                    <img class="w-100" src="{{ asset('icon/bell.svg') }}" alt="">
-                    <div class="tag">2</div>
-                </div>
+                @include('include.bell-box-notification')
             </div>
         </div>
 

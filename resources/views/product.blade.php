@@ -85,10 +85,7 @@
     <div class="main-content-header text-center mb-2">
         <p class="title mb-0">ผลิตภัณฑ์</p>
         <p class="sub-title">(My Device)</p>
-        <div class="bell-box-content">
-            <img class="w-100" src="{{ asset('icon/bell.svg') }}" alt="">
-            <div class="tag-bell-box-content">2</div>
-        </div>
+        @include('include.bell-box-notification')
     </div>
     <div class="container-fluid main-content-sub-header text-center drop-shadow pb-3">
         <div class="row search-box ">

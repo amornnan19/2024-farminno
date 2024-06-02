@@ -173,15 +173,28 @@
             });
         }
 
+
+
         function checkCheckboxes() {
+
+            const url = new URL(window.location.href);
+            const params = new URLSearchParams(url.search);
+            const role = params.get('role');
+
             const checkbox1 = document.getElementById('checkbox1');
             const checkbox2 = document.getElementById('checkbox2');
             const nextButton = document.getElementById('nextButton');
 
             if (checkbox1.checked && checkbox2.checked) {
                 nextButton.classList.remove('disabled');
-                nextButton.setAttribute('href',
-                    '/customer-registration');
+                if (role == 'dealer') {
+                    nextButton.setAttribute('href',
+                        '/dealer-registration');
+                } else {
+                    nextButton.setAttribute('href',
+                        '/customer-registration');
+                }
+
             } else {
                 nextButton.classList.add('disabled');
                 nextButton.removeAttribute('href');

@@ -302,7 +302,8 @@ footer#footer .svg-box {
     padding-top: 20px;
     padding-bottom: 10px;
     border-radius: 0 0 30px 30px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    min-height: 120px;
 }
 
 .main-content-header .title {
@@ -348,6 +349,14 @@ footer#footer .svg-box {
     padding: 2px 15px;
     border-radius: 6px;
     background-color: #091176;
+    color: white;
+}
+
+.status-black-badge {
+    border: none;
+    padding: 2px 10px;
+    border-radius: 6px;
+    background-color: black;
     color: white;
 }
 
@@ -519,6 +528,10 @@ footer#footer .svg-box {
     max-width: 40px;
 }
 
+.f20px {
+    font-size: 20px;
+}
+
 .f16px {
     font-size: 16px;
 }
@@ -564,6 +577,14 @@ footer#footer .svg-box {
         padding: 2px 10px;
         border-radius: 6px;
         background-color: #091176;
+        color: white;
+    }
+
+    .status-black-badge {
+        border: none;
+        padding: 2px 10px;
+        border-radius: 6px;
+        background-color: black;
         color: white;
     }
 }
