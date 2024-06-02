@@ -21,7 +21,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .service-status-content-box {
+        .service-status-content-box pt-2 {
             margin: 10px 0;
         }
 
@@ -90,7 +90,7 @@
     <div class="container-fluid service-status-content-container">
         <div class="container">
             <a href="/service-status-detail">
-                <div class="service-status-content-box">
+                <div class="service-status-content-box pt-2">
                     <div class="row mt-3 mb-3">
                         <div class="col-5 text-end status-label">
                             สถานะ
@@ -163,7 +163,7 @@
         <div class="top-left-label-error">ประกันซ่อม</div>
         <div class="container">
             <a href="/service-status-detail">
-                <div class="service-status-content-box">
+                <div class="service-status-content-box pt-2">
                     <div class="row mt-3 mb-3">
                         <div class="col-5 text-end status-label">
                             สถานะ
@@ -236,7 +236,7 @@
         <div class="top-left-label-error">ประกันซ่อม</div>
         <div class="container">
             <a href="/service-status-detail">
-                <div class="service-status-content-box">
+                <div class="service-status-content-box pt-2">
                     <div class="row mt-3 mb-3">
                         <div class="col-5 text-end status-label">
                             สถานะ
@@ -309,7 +309,7 @@
         <div class="top-left-label-disabled">หมดประกัน</div>
         <div class="container">
             <a href="/service-status-detail">
-                <div class="service-status-content-box">
+                <div class="service-status-content-box pt-2">
                     <div class="row mt-3 mb-3">
                         <div class="col-5 text-end status-label">
                             สถานะ

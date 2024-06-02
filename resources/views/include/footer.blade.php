@@ -1,7 +1,7 @@
 <footer id="footer" class="footer d-block d-sm-none">
     <div class="container">
         <div class="row">
-            <div class="col-3 text-center">
+            <div class="col-3 text-center p-0">
                 <a href="/home" class="{{ request()->path() == 'home' ? 'active' : '' }}">
                     <div class="svg-box">
                         <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
@@ -13,7 +13,7 @@
                     <div>หน้าแรก</div>
                 </a>
             </div>
-            <div class="col-3 text-center">
+            <div class="col-3 text-center p-0">
                 <a href="/service-status"
                     class="{{ (request()->path() == 'service-status' ? 'active' : '' || request()->path() == 'service-status-detail') ? 'active' : '' }}">
                     <div class="svg-box">
@@ -27,7 +27,7 @@
                     <div>สถานะซ่อม</div>
                 </a>
             </div>
-            <div class="col-3 text-center">
+            <div class="col-3 text-center p-0">
                 <a href="/product" class="{{ request()->path() == 'product' ? 'active' : '' }}">
                     <div class="svg-box">
                         <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
@@ -40,8 +40,8 @@
                     <div>ผลิตภัณฑ์</div>
                 </a>
             </div>
-            <div class="col-3 text-center">
-                <a href="/my-account">
+            <div class="col-3 text-center p-0">
+                <a href="/my-account" class="{{ request()->path() == 'my-account' ? 'active' : '' }}">
                     <div class="svg-box">
                         <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">

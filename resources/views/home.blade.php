@@ -43,6 +43,14 @@
             border: 0;
         }
 
+        .home-card .card-body {
+            padding: 15px 10px;
+        }
+
+        .home-card .card-body .card-text {
+            font-size: 12px;
+        }
+
         .home-card p {
             font-size: 14px;
             font-weight: 700;
@@ -52,8 +60,8 @@
         }
 
         .home-card .svg-container {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
         }
 
         .bell-box {

@@ -246,6 +246,13 @@
             $('#successRegisModal').on('hidden.bs.modal', function() {
                 $('#ratingModal').modal('show');
             });
+
+            $('#ratingModal').on('hidden.bs.modal', function() {
+                window.location.href = '/my-account';
+
+            });
+
+            
         });
     </script>
     <script>

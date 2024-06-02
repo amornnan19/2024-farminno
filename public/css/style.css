@@ -274,12 +274,12 @@ nav#top-nav-bar a {
     background-color: #FFFFFF;
     color: #989898;
     padding: 5px 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0.0625em;
     text-align: center;
-    height: 70px;
+    height: 60px;
     align-content: center;
     z-index: 999;
 }
@@ -294,7 +294,7 @@ footer#footer a.active {
 }
 
 footer#footer .svg-box {
-    height: 40px;
+    height: 30px;
 }
 
 .main-content-header {
@@ -530,5 +530,40 @@ footer#footer .svg-box {
 @media (prefers-reduced-motion: reduce) {
     .fade {
         transition: opacity .15s linear;
+    }
+}
+
+
+@media (max-width: 414px) {
+    .status-warning-badge {
+        border: none;
+        padding: 2px 10px;
+        border-radius: 6px;
+        background-color: #D79928;
+        color: white;
+    }
+
+    .status-error-badge {
+        border: none;
+        padding: 2px 10px;
+        border-radius: 6px;
+        background-color: #B2010C;
+        color: white;
+    }
+
+    .status-success-badge {
+        border: none;
+        padding: 2px 10px;
+        border-radius: 6px;
+        background-color: #009D65;
+        color: white;
+    }
+
+    .status-info-badge {
+        border: none;
+        padding: 2px 10px;
+        border-radius: 6px;
+        background-color: #091176;
+        color: white;
     }
 }
