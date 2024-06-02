@@ -6,10 +6,6 @@
             padding-top: 0;
         }
 
-        footer#footer {
-            display: none !important;
-        }
-
         nav#top-nav-bar {
             display: none !important;
         }
@@ -220,11 +216,12 @@
             </div>
 
             <div class="d-flex justify-content-center mt-3">
-                <a href="#" class="btn primary-btn">บันทึก</a>
+                <a href="javascript:void(0)" onclick="success_modal()" class="btn primary-btn">บันทึก</a>
             </div>
 
             <div class="d-flex justify-content-center mt-3">
-                <a href="#" class="btn secondary-btn">ส่งเอกสารการขึ้นทะเบียนการบินฯ</a>
+                <a href="javascript:void(0)" onclick="success_modal()"
+                    class="btn secondary-btn">ส่งเอกสารการขึ้นทะเบียนการบินฯ</a>
             </div>
 
         </div>
@@ -232,6 +229,32 @@
 @endsection
 
 @push('custom-script')
+    <script>
+        $(document).ready(function() {
+            $('#warrantyModal').on('hidden.bs.modal', function() {
+                $('#successModal').modal('show');
+            });
+
+            $('#successModal').on('hidden.bs.modal', function() {
+                $('#errorModal').modal('show');
+            });
+
+            $('#errorModal').on('hidden.bs.modal', function() {
+                $('#successRegisModal').modal('show');
+            });
+
+            $('#successRegisModal').on('hidden.bs.modal', function() {
+                $('#ratingModal').modal('show');
+            });
+        });
+    </script>
+    <script>
+        function success_modal() {
+            $(function() {
+                $('#warrantyModal').modal('show');
+            });
+        }
+    </script>
     <script>
         Dropzone.autoDiscover = false;
 

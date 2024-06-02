@@ -2,6 +2,7 @@
     --main-color: #D79928;
 }
 
+
 body {
     font-family: 'Noto Sans Thai', sans-serif;
     padding-top: 60px;
@@ -86,7 +87,7 @@ h4 {
     margin: 6px 0px 14px 0px;
 }
 
-.primary-color{
+.primary-color {
     color: #D79928;
 }
 
@@ -368,6 +369,10 @@ footer#footer .svg-box {
     font-size: 12px;
 }
 
+.text-error {
+    color: #B2010C !important;
+}
+
 .main-content-sub-header .search-box {
     margin: 0;
     height: 40px;
@@ -443,14 +448,6 @@ footer#footer .svg-box {
     margin: 0;
 }
 
-.modal-dialog {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    margin: 0;
-}
-
 .modal-content {
     width: 100%;
     height: auto;
@@ -459,16 +456,67 @@ footer#footer .svg-box {
 }
 
 
+.alert-modal .modal-content {
+    border: none;
+    box-shadow: none;
+    background: none;
+    padding: 30px;
+}
 
+.alert-modal .modal-content .card {
+    margin: auto;
+    min-height: 350px;
+    border-radius: 30px;
+}
 
+.alert-modal .modal-content .card .card-body {
+    text-align: center;
+}
 
+.alert-modal .modal-content .card .card-body .card-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #363636;
+}
 
+.alert-modal .modal-content .card .card-body .card-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #363636;
+}
 
+.alert-modal .modal-content .card .card-body .modal-img {
+    width: 100%;
+    max-width: 130px;
+}
 
+.alert-modal .modal-content .card .card-footer {
+    background: none;
+    border: none;
+}
+
+.star-path {
+    fill: #CCCCCC;
+}
+
+.active .star-path {
+    fill: #B2010C;
+}
+
+.star-box {
+    max-width: 40px;
+}
 
 .f16px {
     font-size: 16px;
 }
+
 .f14px {
     font-size: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fade {
+        transition: opacity .15s linear;
+    }
 }
