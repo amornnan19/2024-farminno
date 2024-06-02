@@ -15,8 +15,7 @@
         }
 
         .product-content-container {
-            display: flex;
-            justify-content: center;
+            display: block;
         }
 
         .card {
@@ -28,6 +27,8 @@
         .card .img-box {
             padding: 20px;
             padding-bottom: 0;
+            max-height: 300px;
+            overflow: hidden;
         }
 
         .card .product-title {
@@ -65,13 +66,25 @@
             font-size: 14px;
             font-weight: 600;
         }
+
+        .card .top-right-label-warning {
+            position: absolute;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: #D79928;
+            color: white;
+            right: 0;
+            font-size: 14px;
+            font-weight: 600;
+        }
     </style>
 @endpush
 
 @section('content')
     <div class="main-content-header text-center mb-2">
-        <p class="title mb-0">สถานะซ่อม</p>
-        <p class="sub-title">(Service Status)</p>
+        <p class="title mb-0">ผลิตภัณฑ์</p>
+        <p class="sub-title">(My Device)</p>
         <div class="bell-box-content">
             <img class="w-100" src="{{ asset('icon/bell.svg') }}" alt="">
             <div class="tag-bell-box-content">2</div>
@@ -100,11 +113,63 @@
 
     <div class="container product-content-container">
 
-        <a href="/product-register">
+        <a href="/product-detail">
             <div class="card mt-3 mb-3 w-100">
                 <div class="top-right-label-black">ยังไม่ลงทะเบียน</div>
                 <div class="img-box">
                     <img src="{{ asset('img/service-product/7.png') }}" class="card-img-top w-100" alt="">
+                </div>
+                <div class="row card-body">
+                    <div class="col-7">
+                        <p class="product-title">MAVIC</p>
+                        <p class="product-sub-title">Mavic-3-Combo</p>
+                    </div>
+                    <div class="col-5 badge-box">
+                        <p class="status-warning-badge">ประกัน 1 ปี</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="/product-detail">
+            <div class="card mt-3 mb-3 w-100">
+                <div class="top-right-label-warning">อยู่ระหว่างดำเนินการ</div>
+                <div class="img-box">
+                    <img src="{{ asset('img/service-product/8.png') }}" class="card-img-top w-100" alt="">
+                </div>
+                <div class="row card-body">
+                    <div class="col-7">
+                        <p class="product-title">MAVIC</p>
+                        <p class="product-sub-title">Mavic-3-Combo</p>
+                    </div>
+                    <div class="col-5 badge-box">
+                        <p class="status-warning-badge">ประกัน 1 ปี</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="/product-detail">
+            <div class="card mt-3 mb-3 w-100">
+                <div class="img-box">
+                    <img src="{{ asset('img/service-product/9.png') }}" class="card-img-top w-100" alt="">
+                </div>
+                <div class="row card-body">
+                    <div class="col-7">
+                        <p class="product-title">MAVIC</p>
+                        <p class="product-sub-title">Mavic-3-Combo</p>
+                    </div>
+                    <div class="col-5 badge-box">
+                        <p class="status-warning-badge">ประกัน 1 ปี</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="/product-detail">
+            <div class="card mt-3 mb-3 w-100">
+                <div class="img-box">
+                    <img src="{{ asset('img/service-product/10.png') }}" class="card-img-top w-100" alt="">
                 </div>
                 <div class="row card-body">
                     <div class="col-7">

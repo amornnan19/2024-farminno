@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {return redirect('/login');});
+Route::get('/', function () {return redirect('/list');});
+
+Route::get('/list', function () {return view('list');})->name('list');
 
 Route::get('/home', function () {return view('home');})->name('home');
 
@@ -18,3 +20,4 @@ Route::get('/service-status', function () {return view('service-status');})->nam
 Route::get('/service-status-detail', function () {return view('service-status-detail');})->name('service-status-detail');
 
 Route::get('/product', function () {return view('product');})->name('product');
+Route::get('/product-detail', function () {return view('product-detail');})->name('product-detail');
